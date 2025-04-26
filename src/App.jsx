@@ -8,35 +8,67 @@ function App() {
 
   return (
     <>
+    <div className="page-container">
       {/* Phần 1: Topbar */}
-      <div style={{
-        backgroundColor: '#2b2b6f',
-        color: 'white',
-        padding: '5px 20px',
-        fontSize: '14px',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        zIndex: 1000,
-      }}>
-        <div style={{ display: 'flex', gap: '15px' }}>
-          <button style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>E-OFFICE</button>
-          <button style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>EMAIL</button>
-          <button style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>THƯ VIỆN - THÔNG TIN</button>
+      <div className="topbar">
+        <div className="topbar-left">
+          <button className="topbar-button">E-OFFICE</button>
+          <button className="topbar-button">EMAIL</button>
+          <button className="topbar-button">THƯ VIỆN - THÔNG TIN</button>
         </div>
-        <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-          <a href="#" style={{ color: 'white', textDecoration: 'none' }}>KẾT NỐI | LIÊN HỆ</a>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="VN" style={{ width: '20px', height: '14px' }} />
-          <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK" style={{ width: '20px', height: '14px' }} />
+        <div className="topbar-right">
+          <a href="#" className="topbar-link">KẾT NỐI | LIÊN HỆ</a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="VN" className="flag-icon" />
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK" className="flag-icon" />
         </div>
       </div>
 
       {}
-      <div style={{ height: '40px' }}></div>
+      <div className="topbar-spacing"></div>
+      <main className="content">
+    {}
+  </main>
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-column">
+            <h4 className="footer-title">LIÊN HỆ</h4>
+            <p>ĐẠI HỌC CÔNG NGHIỆP TP HỒ CHÍ MINH</p>
+            <p>Địa chỉ: 12 Nguyễn Văn Bảo, P.4, Q.Gò Vấp, TP.HCM</p>
+            <p>Điện thoại: 028 38940390 - 100</p>
+            <p>Fax: 028 38946090</p>
+            <p>Email: <a href="mailto:dhcn@iuh.edu.vn" className="footer-link">dhcn@iuh.edu.vn</a></p>
+          </div>
+
+          <div className="footer-column">
+            <h4 className="footer-title">HOẠT ĐỘNG KHÁC</h4>
+            <p>Dịch vụ công cộng</p>
+            <p>CLB/Đội/Nhóm sinh viên</p>
+            <p>Công tác xã hội</p>
+          </div>
+
+          <div className="footer-column">
+            <h4 className="footer-title">THÔNG TIN MỞ RỘNG</h4>
+            <p>Báo chí viết về IUH</p>
+            <p>Khám phá IUH</p>
+            <p>Kỹ năng mềm</p>
+            <p>Thông tin sinh viên</p>
+          </div>
+
+          <div className="footer-column">
+            <h4 className="footer-title">VĂN BẢN TIỆN ÍCH</h4>
+            <p>Quy chế - Quy định</p>
+            <p>Biểu mẫu đào tạo</p>
+            <p>Biểu mẫu khoa học</p>
+          </div>
+        </div>
+
+        {}
+        <div className="footer-bottom">
+          <p>© Bản quyền 2015 - Đại học Công nghiệp Thành phố Hồ Chí Minh</p>
+        </div>
+      </footer>
+      </div>
     </>
   )
 }
