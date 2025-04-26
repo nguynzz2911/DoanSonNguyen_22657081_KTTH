@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import banner1 from '../src/img/banner1.jpg';
+import banner2 from '../src/img/banner2.jpg';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,12 @@ function App() {
 
       {}
       <div className="topbar-spacing"></div>
+      <div className="banner-slider">
+  <div className="slides">
+    <img src={banner1} alt="Banner 1" className="slide" />
+    <img src={banner2} alt="Banner 2" className="slide" />
+  </div>
+</div>
       <main className="content">
     {}
   </main>
